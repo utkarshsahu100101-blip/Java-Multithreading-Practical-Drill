@@ -19,5 +19,12 @@ public class Main {
 //Thread t1 = new Thread(print);
 //t1.start();
 
+        Thread t1 = new Thread(new PrintNumberByTwoThread(1,20,1));
+        Thread t2 = new Thread(new PrintNumberByTwoThread(1,20,0));
+
+
+
+t1.start();
+t2.start();
     }
 }
